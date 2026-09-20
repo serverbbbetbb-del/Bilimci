@@ -1,1 +1,20 @@
+Gizlin maglumatlar
 
+.env
+
+Node.js
+
+node_modules/
+
+Ýüklenen faýllar
+
+uploads/
+
+Log faýllary
+
+*.log
+
+Operasion ulgam faýllary
+
+.DS_Store
+Thumbs.db
