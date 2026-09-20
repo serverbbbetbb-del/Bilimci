@@ -1,1 +1,96 @@
+<!DOCTYPE html><html lang="tk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Okuwçy maglumatlary | Türkmen AI</title>
+    <link rel="stylesheet" href="css/login.css">
+</head><body><div class="container">
 
+    <div class="logo">🇹🇲 Türkmen AI</div>
+
+    <h1>Okuwçy maglumatlary</h1>
+
+    <p class="subtitle">
+        AI kömekçini başlamazdan öň maglumatlaryňy giriz.
+    </p>
+
+    <form id="studentForm">
+
+        <label>Ýurt</label>
+        <input type="text" value="Türkmenistan" readonly>
+
+        <label>Welaýat</label>
+        <select id="velayat" required>
+            <option value="">Welaýaty saýla</option>
+            <option>Aşgabat şäheri</option>
+            <option>Ahal welaýaty</option>
+            <option>Balkan welaýaty</option>
+            <option>Daşoguz welaýaty</option>
+            <option>Lebap welaýaty</option>
+            <option>Mary welaýaty</option>
+        </select>
+
+        <label>Etrap / şäher</label>
+        <input
+            type="text"
+            id="district"
+            placeholder="Etrap ýa-da şäheriň ady"
+            required
+        >
+
+        <label>Mekdep belgisi</label>
+        <input
+            type="text"
+            id="school"
+            placeholder="Mysal: 27-nji mekdep"
+            required
+        >
+
+        <label>Synp</label>
+        <select id="grade" required>
+            <option value="">Synpy saýla</option>
+            <option>1-nji synp</option>
+            <option>2-nji synp</option>
+            <option>3-nji synp</option>
+            <option>4-nji synp</option>
+            <option>5-nji synp</option>
+            <option>6-njy synp</option>
+            <option>7-nji synp</option>
+            <option>8-nji synp</option>
+            <option>9-njy synp</option>
+            <option>10-njy synp</option>
+            <option>11-nji synp</option>
+        </select>
+
+        <label>Adyň</label>
+        <input
+            type="text"
+            id="name"
+            placeholder="Adyňy ýaz"
+            required
+        >
+
+        <label>Telefon belgisi</label>
+        <input
+            type="tel"
+            id="phone"
+            placeholder="+993 XX XX XX XX"
+            required
+        >
+
+        <button type="submit">
+            AI kömekçä geç
+        </button>
+
+    </form>
+
+    <p class="privacy">
+        Maglumatlaryňy diňe okuw kömekçisi üçin ulanýarys.
+    </p>
+
+</div>
+
+<script src="js/profile.js"></script>
+
+</body>
+</html>
