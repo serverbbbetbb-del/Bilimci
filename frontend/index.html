@@ -1,45 +1,229 @@
-<!DOCTYPE html><html lang="tk">
+<!DOCTYPE html>
+<html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Türkmen AI Okuw Kömekçisi</title>
-    <link rel="stylesheet" href="css/style.css">
-</head><body><header>
-    <div class="logo">
-        🇹🇲 Türkmen AI
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlockMods - Minecraft Modları</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      color: white;
+      background: #111827;
+    }
+
+    header {
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #1f2937;
+      border-bottom: 2px solid #22c55e;
+    }
+
+    .logo {
+      color: #4ade80;
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 24px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #4ade80;
+    }
+
+    .hero {
+      min-height: 420px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+      background:
+        linear-gradient(#0008, #0008),
+        url("https://images.unsplash.com/photo-1607513746994-51f730a44832?auto=format&fit=crop&w=1600&q=80")
+        center/cover;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      color: #d1d5db;
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 24px;
+      color: white;
+      background: #22c55e;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #16a34a;
+    }
+
+    .container {
+      width: 84%;
+      max-width: 1200px;
+      margin: 50px auto;
+    }
+
+    .section-title {
+      margin-bottom: 25px;
+      font-size: 30px;
+      color: #4ade80;
+    }
+
+    .mod-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+
+    .mod-card {
+      overflow: hidden;
+      background: #1f2937;
+      border: 1px solid #374151;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+
+    .mod-card:hover {
+      transform: translateY(-6px);
+      border-color: #22c55e;
+    }
+
+    .mod-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .mod-content {
+      padding: 18px;
+    }
+
+    .mod-content h3 {
+      margin-bottom: 10px;
+    }
+
+    .mod-content p {
+      min-height: 45px;
+      color: #9ca3af;
+      margin-bottom: 18px;
+    }
+
+    footer {
+      padding: 25px;
+      text-align: center;
+      color: #9ca3af;
+      background: #1f2937;
+    }
+
+    @media (max-width: 650px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin: 0 7px;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">⛏ BlockMods</div>
+
+    <nav>
+      <a href="#">Ana Sayfa</a>
+      <a href="#mods">Modlar</a>
+      <a href="#hakkimizda">Hakkımızda</a>
+      <a href="#iletisim">İletişim</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>En İyi Minecraft Modlarını Keşfet</h1>
+      <p>Güvenli, güncel ve ücretsiz Minecraft modlarını indir.</p>
+      <a class="button" href="#mods">Modları Gör</a>
     </div>
+  </section>
 
-    <div class="language">
-        Türkmençe
+  <main class="container" id="mods">
+    <h2 class="section-title">Popüler Modlar</h2>
+
+    <div class="mod-grid">
+
+      <div class="mod-card">
+        <img src="https://images.unsplash.com/photo-1614728263952-84ea256f9679?auto=format&fit=crop&w=800&q=80" alt="Adventure Mod">
+        <div class="mod-content">
+          <h3>Adventure Mod</h3>
+          <p>Yeni yaratıklar, eşyalar ve macera dünyaları ekler.</p>
+          <a class="button" href="#">İndir</a>
+        </div>
+      </div>
+
+      <div class="mod-card">
+        <img src="https://images.unsplash.com/photo-1587573089734-599f90c41d2c?auto=format&fit=crop&w=800&q=80" alt="Magic Mod">
+        <div class="mod-content">
+          <h3>Magic Mod</h3>
+          <p>Büyüler, sihirli kitaplar ve özel güçler içerir.</p>
+          <a class="button" href="#">İndir</a>
+        </div>
+      </div>
+
+      <div class="mod-card">
+        <img src="https://images.unsplash.com/photo-1599685315640-7e8a7c4f1f6e?auto=format&fit=crop&w=800&q=80" alt="Technology Mod">
+        <div class="mod-content">
+          <h3>Technology Mod</h3>
+          <p>Makinalar, enerji sistemleri ve otomasyon özellikleri ekler.</p>
+          <a class="button" href="#">İndir</a>
+        </div>
+      </div>
+
     </div>
-</header>
+  </main>
 
-<main class="hero">
-
-    <div class="flag">🇹🇲</div>
-
-    <h1>Türkmen AI Okuw Kömekçisi</h1>
-
+  <section class="container" id="hakkimizda">
+    <h2 class="section-title">Hakkımızda</h2>
     <p>
-        Okuwyňda saňa kömek edýän akylly türkmençe AI kömekçi.
+      BlockMods, Minecraft oyuncuları için kaliteli ve güncel modları
+      bir araya getiren bir topluluk sitesidir.
     </p>
+  </section>
 
-    <p class="description">
-        Soragyňy ýaz, surat iber ýa-da ses arkaly sorag ber.
-        AI saňa düşnükli görnüşde jogap bersin.
-    </p>
-
-    <a href="login.html" class="start-button">
-        Başlamak
-    </a>
-
-</main>
-
-<footer>
-    © 2026 Türkmen AI Okuw Kömekçisi
-</footer>
-
-<script src="js/app.js"></script>
+  <footer id="iletisim">
+    © 2026 BlockMods - Tüm hakları saklıdır.
+  </footer>
 
 </body>
 </html>
